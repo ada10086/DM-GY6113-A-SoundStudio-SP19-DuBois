@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 264.0, 104.0, 887.0, 510.0 ],
+		"rect" : [ 651.0, 79.0, 925.0, 770.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 18.0,
@@ -39,12 +39,48 @@
 		"subpatcher_template" : "newtemplate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 221.0, 315.0, 376.0, 47.0 ],
+					"presentation_linecount" : 2,
+					"text" : "   (freq of any MIDI note)/(freq of A: 220)\n= playback speed of MIDI note / speed of A(1)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 933.0, 305.0, 403.0, 47.0 ],
+					"text" : "   (freq of A: 220)/(freq of any MIDI note)\n= speed of A/playback speed of MIDI note"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 221.0, 285.0, 150.0, 27.0 ],
+					"text" : "<playback speed"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-124",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 85.0, 212.0, 54.0, 29.0 ],
+					"patching_rect" : [ 134.0, 232.0, 54.0, 29.0 ],
 					"text" : "/ 220."
 				}
 
@@ -56,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 44.0, 331.0, 42.0, 29.0 ],
+					"patching_rect" : [ 134.0, 387.0, 42.0, 29.0 ],
 					"text" : "sig~"
 				}
 
@@ -70,7 +106,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 44.0, 270.0, 85.0, 29.0 ]
+					"patching_rect" : [ 134.0, 294.0, 85.0, 29.0 ]
 				}
 
 			}
@@ -81,7 +117,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 38.0, 384.0, 176.0, 29.0 ],
+					"patching_rect" : [ 134.0, 438.0, 176.0, 29.0 ],
 					"saved_object_attributes" : 					{
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
@@ -89,7 +125,7 @@
 						"loopend" : [ 0.0, "ms" ],
 						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "basic",
-						"originallength" : [ 0.0, "ticks" ],
+						"originallength" : [ 1920.97955658682622, "ticks" ],
 						"originaltempo" : 120.0,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
@@ -110,7 +146,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 134.0, 447.0, 84.0, 29.0 ]
+					"patching_rect" : [ 176.0, 496.0, 84.0, 29.0 ]
 				}
 
 			}
@@ -121,7 +157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 39.0, 499.0, 29.5, 29.0 ],
+					"patching_rect" : [ 134.0, 531.0, 29.5, 29.0 ],
 					"text" : "*~"
 				}
 
@@ -134,7 +170,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ -18.0, 517.0, 24.0, 24.0 ]
+					"patching_rect" : [ 92.0, 550.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -144,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.0, 572.0, 230.0, 27.0 ],
+					"patching_rect" : [ 194.0, 604.0, 230.0, 27.0 ],
 					"text" : "< digital to analog converter"
 				}
 
@@ -155,7 +191,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 566.0, 48.0, 29.0 ],
+					"patching_rect" : [ 134.0, 598.0, 48.0, 29.0 ],
 					"text" : "dac~"
 				}
 
@@ -166,7 +202,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 511.0, 442.0, 231.0, 27.0 ],
+					"patching_rect" : [ 742.5, 446.0, 231.0, 27.0 ],
 					"text" : "< duration for the line object"
 				}
 
@@ -180,7 +216,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 387.5, 443.0, 115.0, 29.0 ]
+					"patching_rect" : [ 619.0, 447.0, 115.0, 29.0 ]
 				}
 
 			}
@@ -190,7 +226,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 462.0, 326.0, 201.0, 27.0 ],
+					"patching_rect" : [ 723.0, 325.0, 201.0, 27.0 ],
 					"text" : "< playback speed (ratio)"
 				}
 
@@ -202,7 +238,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 465.0, 237.0, 376.0, 47.0 ],
+					"patching_rect" : [ 698.0, 232.0, 376.0, 47.0 ],
 					"text" : "< divide the desired frequency INTO the base frequency (220.)"
 				}
 
@@ -214,7 +250,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 338.0, 393.0, 66.0, 29.0 ],
+					"patching_rect" : [ 619.0, 387.0, 66.0, 29.0 ],
 					"text" : "* 1000."
 				}
 
@@ -228,7 +264,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 358.0, 326.0, 94.0, 29.0 ]
+					"patching_rect" : [ 619.0, 325.0, 94.0, 29.0 ]
 				}
 
 			}
@@ -239,7 +275,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 364.0, 233.0, 59.0, 29.0 ],
+					"patching_rect" : [ 619.0, 232.0, 59.0, 29.0 ],
 					"text" : "!/ 220."
 				}
 
@@ -247,11 +283,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-98",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 515.0, 174.0, 172.0, 67.0 ],
+					"patching_rect" : [ 518.0, 170.0, 580.0, 27.0 ],
 					"text" : "< frequency of that MIDI note according to 12TET @ A440"
 				}
 
@@ -265,7 +300,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 379.0, 173.0, 126.0, 29.0 ]
+					"patching_rect" : [ 379.0, 170.0, 126.0, 29.0 ]
 				}
 
 			}
@@ -321,7 +356,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 406.0, 395.0, 156.0, 27.0 ],
+					"patching_rect" : [ 698.0, 383.0, 156.0, 27.0 ],
 					"text" : "< length of sample"
 				}
 
@@ -345,7 +380,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 496.0, 124.0, 29.0 ],
+					"patching_rect" : [ 620.5, 500.0, 124.0, 29.0 ],
 					"text" : "0 0 1000 $1"
 				}
 
@@ -357,7 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 389.0, 543.0, 47.0, 29.0 ],
+					"patching_rect" : [ 620.5, 547.0, 47.0, 29.0 ],
 					"text" : "line~"
 				}
 
@@ -369,7 +404,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 389.0, 589.0, 82.0, 29.0 ],
+					"patching_rect" : [ 620.5, 593.0, 82.0, 29.0 ],
 					"text" : "play~ foo"
 				}
 
@@ -419,7 +454,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 485.0, 652.0, 84.0, 29.0 ]
+					"patching_rect" : [ 673.5, 632.0, 84.0, 29.0 ]
 				}
 
 			}
@@ -430,7 +465,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 390.0, 704.0, 29.5, 29.0 ],
+					"patching_rect" : [ 621.5, 671.0, 29.5, 29.0 ],
 					"text" : "*~"
 				}
 
@@ -443,7 +478,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 333.0, 722.0, 24.0, 24.0 ]
+					"patching_rect" : [ 581.5, 692.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -453,7 +488,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 777.0, 230.0, 27.0 ],
+					"patching_rect" : [ 681.5, 744.0, 230.0, 27.0 ],
 					"text" : "< digital to analog converter"
 				}
 
@@ -464,7 +499,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 771.0, 48.0, 29.0 ],
+					"patching_rect" : [ 621.5, 738.0, 48.0, 29.0 ],
 					"text" : "dac~"
 				}
 
